@@ -13,7 +13,8 @@
     "react-dom": "^18.3.1",
     "@google/genai": "latest",
     "lucide-react": "latest",
-    "framer-motion": "latest"
+    "framer-motion": "latest",
+    "html2canvas": "^1.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

@@ -29,9 +29,10 @@ export const PrizeReveal: React.FC<PrizeRevealProps> = ({ prize, fortune, onClos
       // Use html2canvas to generate an image of the card
       const canvas = await html2canvas(cardRef.current, {
         useCORS: true, // Important for external images like picsum
-        scale: 2, // Higher resolution
+        scale: 3, // Higher resolution for retina displays
         backgroundColor: '#fdfbf7', // Ensure background is captured
-        logging: false
+        logging: false,
+        allowTaint: false
       });
 
       // Create download link
